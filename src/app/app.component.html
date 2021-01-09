@@ -16,8 +16,9 @@
     <input type="range" min="1" max="50" value="{{limit}}" class="slider form-control-range"
       (change)="handleSlideChange($event.target.value)" />
 
-    <button class="btn btn-info" (click)="generate()">Generate Words</button>
-    <button class="btn btn-info" (click)="randomgenerate()">Generate Random Words</button>
+    <button style="margin-right: 16px" class="btn btn-info" (click)="generate()">Generate Words in Sequence</button>
+
+    <button style="margin-right: 16px" class="btn btn-info" (click)="randomgenerate()">Generate Random Words</button>
 
 
     <div *ngIf="words" class="card card-body">
